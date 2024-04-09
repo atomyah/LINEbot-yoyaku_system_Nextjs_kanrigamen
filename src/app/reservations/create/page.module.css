@@ -1,0 +1,85 @@
+/* page.module.css */
+
+/* ページ全体のスタイル */
+.main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* タイトルのスタイル */
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /* フォームのラベルのスタイル */
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* フォーム入力フィールドのスタイル */
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* DatePicker用のスタイル */
+  .datePicker {
+    /* DatePickerに適用するスタイル */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* selectタグ用のスタイル */
+  .selectField {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .selectField:focus {
+    outline: none;
+  }
+  
+  /* selectタグのオプションのスタイル */
+  .selectField option {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+  }
+
+
+  /* ボタンのスタイル */
+  .submitButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }

@@ -1,27 +1,32 @@
+"use client"
+
 import Link from 'next/link';
 import styles from './page.module.css';
+//import { Client } from 'pg';
+import { useEffect, useState } from 'react';
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid';
+import interactionPlugin, { DateClickArg, Draggable, DropArg,  } from '@fullcalendar/interaction';
+import jaLocale from '@fullcalendar/core/locales/ja';
+import { EventContentArg, EventInput, EventClickArg } from '@fullcalendar/common';
+import Modal from 'react-modal';
+
+import Header from './components/Header';
+import Calender from './components/Calender';
+
 
 export default function HomePage() {
+
   return (
     <>
-      <header className={styles.header}>
-        <nav className={styles.nav}>
-          <ul className={styles.navList}>
-            <li className={styles.navItem}>
-              <Link href="/">トップページ</Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/reservations/add">予約追加</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <Header /> {/* ヘッダーナビゲーション */}
+
+    <main className={styles.main}>
       <div className={styles.container}>
-        <main className={styles.main}>
-          <h1>予約管理画面</h1>
-          <p>ここに予約状況を表示します。</p>
-        </main>
+        <Calender />
       </div>
+    </main>
     </>
   );
 }
