@@ -1,4 +1,4 @@
-// middleware.ts
+// middleware.ts ベーシック認証の実装
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
